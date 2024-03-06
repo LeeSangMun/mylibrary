@@ -60,6 +60,6 @@ class Solution {
 			answer = Math.max(answer, i);
 		}
         
-        return answer;
+        return answer; 
     }
 }
