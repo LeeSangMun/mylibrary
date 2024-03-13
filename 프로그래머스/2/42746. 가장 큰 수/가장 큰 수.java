@@ -8,6 +8,7 @@ class Solution {
 			public int compare(String s1, String s2) {
 				String t1 = (s1 + s1.substring(0, 1).repeat(3)).substring(0, 4);
 				String t2 = (s2 + s2.substring(0, 1).repeat(3)).substring(0, 4);
+                
 				if(t1.equals(t2)) {
 					return (s2+s1).compareTo(s1+s2);
 				}
