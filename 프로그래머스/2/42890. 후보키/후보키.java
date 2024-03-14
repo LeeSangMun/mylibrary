@@ -20,6 +20,7 @@ class Solution {
 
 		for (int i = 0; i < relation.length; i++) {
 			String temp = "";
+
 			for (int j = 0; j < flag.length; j++) {
 				if (flag[j])
 					temp += relation[i][j];
