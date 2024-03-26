@@ -1,0 +1,18 @@
+SELECT he.EMP_NO, EMP_NAME
+    , 
+    CASE 
+        WHEN AVG(SCORE) >= 96 THEN 'S'
+        WHEN AVG(SCORE) >= 90 THEN 'A'
+        WHEN AVG(SCORE) >= 80 THEN 'B'
+        ELSE 'C'
+    END GRADE
+    , 
+    CASE 
+        WHEN AVG(SCORE) >= 96 THEN SAL * 0.2
+        WHEN AVG(SCORE) >= 90 THEN SAL * 0.15
+        WHEN AVG(SCORE) >= 80 THEN SAL * 0.1
+        ELSE 0
+    END BONUS
+FROM HR_EMPLOYEES he JOIN HR_GRADE hg ON he.EMP_NO = hg.EMP_NO
+GROUP BY he.EMP_NO, EMP_NAME
+ORDER BY he.EMP_NO
