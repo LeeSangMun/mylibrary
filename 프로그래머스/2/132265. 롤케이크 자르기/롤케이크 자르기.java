@@ -16,7 +16,6 @@ class Solution {
 			set2.add(topping[i]);
 			if (map.get(topping[i]) == 0)
 				set1.remove(topping[i]);
-
 			if (set1.size() == set2.size()) {
 				answer++;
 			} else if (set1.size() < set2.size()) {
