@@ -17,6 +17,7 @@ class Solution {
 					que.offer(new int[] {i, j});
 					flag[i][j] = true;;
 					answer[0]++;
+                    
 					while(!que.isEmpty()) {
 			        	int[] temp = que.poll();
 			        	
