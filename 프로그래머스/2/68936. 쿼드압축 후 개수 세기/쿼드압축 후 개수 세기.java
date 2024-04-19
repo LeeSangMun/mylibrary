@@ -4,8 +4,6 @@ class Solution {
     public int[] solution(int[][] arr) {
         List<int[]> list = new ArrayList<>();
 
-		
-
 		for (int i = 0; i < arr.length; i += 2) {
 			for (int j = 0; j < arr.length; j += 2) {
 				int[] temp = new int[3];
