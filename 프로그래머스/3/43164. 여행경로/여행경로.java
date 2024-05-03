@@ -10,9 +10,7 @@ class Solution {
 	
 	static void f(String temp, String next, String[][] tickets, boolean[] flag, int n) {
 		if(n == tickets.length) {
-			if(answer.compareTo(temp) > 0) {
-				answer = temp;
-			}
+			if(answer.compareTo(temp) > 0) answer = temp;
 		}
 		
 		for (int i = 0; i < tickets.length; i++) {
