@@ -3,8 +3,7 @@ class Solution {
         int n = 1;
 		long num = (long)w * h;
 
-		if (w == h)
-			return (long)w * w - w;
+		if (w == h) return (long)w * w - w;
 		
 		boolean flag = true;
 		
