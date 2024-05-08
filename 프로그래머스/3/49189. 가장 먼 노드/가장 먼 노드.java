@@ -43,8 +43,7 @@ class Solution {
 		}
 		
 		for (int j = 0; j < len.length; j++) {
-			if(len[j] == max)
-				answer++;
+			if(len[j] == max) answer++;
 		}
 		
 		return answer;
