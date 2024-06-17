@@ -6,12 +6,10 @@ class Solution {
 
 		for (int i = 0; i < m; i++) {
 			for (int j = 0; j < n; j++) {
-				if(cityMap[i][j] == 1) {
-					continue;
-				} else if(cityMap[i][j] == 2) {
+				if(cityMap[i][j] == 2) {
 					map[i+1][j][0] = map[i][j][0];
 					map[i][j+1][1] = map[i][j][1];
-				} else {
+				} else if(cityMap[i][j] == 0) {
 					map[i+1][j][0] = (map[i][j][0] + map[i][j][1])%MOD;
 					map[i][j+1][1] = (map[i][j][0] + map[i][j][1])%MOD;
 				}
